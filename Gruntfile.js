@@ -1,13 +1,14 @@
 module.exports = function (grunt) {
   grunt.initConfig({
-    less: {
-      compile: {
-        files: { 'dist/compiled.css': 'css/*.less' }
-      } 
+    csslint: {
+      options: {
+        csslintrc: '.csslintrc'
+      },
+      src: ['*.css']
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
 
-  grunt.registerTask('default', ['less:compile']);
+  grunt.registerTask('default', ['csslint']);
 };
