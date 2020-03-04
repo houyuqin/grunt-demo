@@ -19,7 +19,7 @@
   "homepage": "https://github.com/houyuqin/grunt-demo#readme",
   "devDependencies": {
     "grunt": "^1.0.4",
-    "grunt-contrib-imagemin": "^3.1.0"
+    "grunt-contrib-concat": "^1.0.1"
   },
   "dependencies": {
     "grunt-mocha": "^1.2.0"
